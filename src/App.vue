@@ -5,11 +5,19 @@
       app
       clipped-right
       color="transparent"
+      class="appBar"
       dark
+      flat
+      
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer">
         <v-icon>fas fa-bars</v-icon>
       </v-app-bar-nav-icon>
+      <v-spacer></v-spacer>
+        <div class="logo"></div>
+        <v-spacer></v-spacer>
+        <v-icon>fas fa-search</v-icon>
+
     </v-app-bar>
 
     <v-navigation-drawer
@@ -53,8 +61,23 @@ export default {
 <style scoped>
 .appBar{
   background-color: transparent;
+  border-bottom: white 1px;
+  
 }
 #app{
   background-image: linear-gradient(191deg, rgba(35,148,160,1) 44%, rgba(168,180,16,1) 100%);
 }
+.logo{
+   width: 200px;
+   height: 72.64px;
+   padding: 0px;
+   background-size: contain;
+    background-image: url('./assets/logoPetPatrol.png'); 
+   
+   /* padding-top: 40px; */
+   
+   
+  
+}
+
 </style>
