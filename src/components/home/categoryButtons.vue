@@ -1,6 +1,5 @@
 <template>
     <div class="buttonContainer">
-
     </div>
 </template>
 
@@ -11,7 +10,7 @@ export default {
         
     },
     data: () => {
-
+        
     }
 }
 </script>
@@ -25,6 +24,5 @@ export default {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        background-color: #21a434;
     }
 </style>
