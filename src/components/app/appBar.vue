@@ -12,9 +12,9 @@
         <v-spacer></v-spacer>
         <div class="logo"></div>
         <v-spacer></v-spacer>
-        <v-app-bar-nav-item>
+        <v-app-bar-nav-icon>
             <v-icon>fas fa-search</v-icon>
-        </v-app-bar-nav-item>
+        </v-app-bar-nav-icon>
     </v-app-bar>
 </template>
 
@@ -39,6 +39,6 @@ export default {
         height: 72.64px;
         padding: 0px;
         background-size: contain;
-        background-image: url('../assets/logoPetPatrol.png');
+        background-image: url('../../assets/logoPetPatrol.png');
     }
 </style>

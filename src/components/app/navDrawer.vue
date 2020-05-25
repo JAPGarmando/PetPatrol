@@ -10,7 +10,7 @@
             <v-icon style="color: black">fas fa-home</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title style="color: black">Home</v-list-item-title>
+            <v-list-item-title><span class="itemTitle">Home</span></v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -28,6 +28,12 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    .itemTitle{
+        font-family: 'Poppins',sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+    }
 </style>
