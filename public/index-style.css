@@ -5,8 +5,8 @@ html{
 }
 
 html::-webkit-scrollbar{
-    background: #1B5E20;
-    width: 20px;
+    background: rgb(14, 164, 190);
+    width: 5px;
     border-radius: 10px;
 }
 
