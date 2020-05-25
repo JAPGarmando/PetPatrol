@@ -1,6 +1,5 @@
 <template>
   <v-app id="app">
-
     <v-app-bar
       app
       clipped-right
@@ -19,7 +18,7 @@
         <v-icon>fas fa-search</v-icon>
 
     </v-app-bar>
-
+    
     <v-navigation-drawer
       v-model="drawer"
       app
@@ -37,19 +36,22 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
+    
 
     <v-content>
+      <mascotasCard/>
     </v-content>
   </v-app>
 </template>
 
 <script>
-
+import mascotasCard from './components/mascotasCard.vue'
 export default {
+  
   name: 'App',
 
   components: {
-
+    mascotasCard,
   },
 
   data: () => ({
@@ -73,11 +75,7 @@ export default {
    padding: 0px;
    background-size: contain;
     background-image: url('./assets/logoPetPatrol.png'); 
-   
    /* padding-top: 40px; */
-   
-   
-  
 }
 
 </style>

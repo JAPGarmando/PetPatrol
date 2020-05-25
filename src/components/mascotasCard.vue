@@ -6,35 +6,18 @@
           :key="card.title"
           :cols="card.flex"
         >
-          <v-card>
-            <v-img
-              :src="card.src"
-              class="white--text align-end"
-              gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-              height="200px"
-            >
-              <v-card-title v-text="card.title"></v-card-title>
+          <v-card color="#1e3c41" width="160px" >
+            <v-img :src="card.src" class="white--text align-end" cover height="170px" width="160px">  
             </v-img>
-
-            <v-card-actions>
+            <v-card-actions class="actionsCard">
               <v-spacer></v-spacer>
-
-              <v-btn icon>
-                <v-icon>mdi-heart</v-icon>
-              </v-btn>
-
-              <v-btn icon>
-                <v-icon>mdi-bookmark</v-icon>
-              </v-btn>
-
-              <v-btn icon>
-                <v-icon>mdi-share-variant</v-icon>
-              </v-btn>
+              <v-card-title  class="white--text" v-text="card.title"></v-card-title>
+              <v-spacer></v-spacer>
             </v-card-actions>
           </v-card>
         </v-col>
       </v-row>
-    </v-container>
+      </v-container>
 </template>
 
 <script>
@@ -42,9 +25,9 @@ export default {
     
     data: () => ({
       cards: [
-        { title: 'Pre-fab homes', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg', flex: 12 },
-        { title: 'Favorite road trips', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg', flex: 6 },
-        { title: 'Best airlines', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 6 },
+        { title: 'Frida', src: 'https://cdn.discordapp.com/attachments/682040046072758387/714277798805635072/Frida.jpg', flex: 6 },
+        { title: 'Jamgi', src: 'https://cdn.discordapp.com/attachments/682040046072758387/714278711368876083/pug-dog-isolated-white-background_127657-22419.jpg', flex: 6 },
+        { title: 'Nala', src: 'https://media.discordapp.net/attachments/682040046072758387/714278674630967306/48-484516_dog-clipart-transparent-background-dog-cat-white-background.png', flex: 6 },
       ],
     }),
   
@@ -52,5 +35,15 @@ export default {
 </script>
 
 <style>
-
+ .actionsCard{
+     height: 45px;
+ }
+ .mascota{
+   width: 200px;
+   height: 72.64px;
+   padding: 0px;
+   background-size: contain;
+   /* padding-top: 40px; */
+   background-image: url('../assets/logoPetPatrol.png');
+}
 </style>
