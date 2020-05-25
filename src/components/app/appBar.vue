@@ -1,11 +1,5 @@
 <template>
-  <v-app-bar
-      app
-      clipped-right
-      color="transparent"
-      class="appBar"
-      dark
-    >
+  <v-app-bar  app clipped-right color="transparent" class="appBar" dark>
         <v-app-bar-nav-icon @click.stop="navDrawer.drawer = !navDrawer.drawer">
             <v-icon>fas fa-bars</v-icon>
         </v-app-bar-nav-icon>
