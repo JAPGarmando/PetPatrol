@@ -13,8 +13,8 @@
 
 <script>
 import { mapState } from 'vuex'
-import navigationDrawer from './components/navDrawer.vue'
-import applicationBar from './components/appBar.vue'
+import navigationDrawer from './components/app/navDrawer.vue'
+import applicationBar from './components/app/appBar.vue'
 
 export default {
   name: 'App',

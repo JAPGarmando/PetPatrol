@@ -1,20 +1,52 @@
 <template>
     <div id="home">
-
+        <p class="headers">Últimas actualizaciones <v-icon class="icons">fas fa-newspaper</v-icon></p>
+        <div class="rowContainer">
+        </div>
+        <p class="headers">Categorías <v-icon class="icons">fas fa-paw</v-icon></p>
+        <div class="rowContainer">
+            <category-buttons/>
+        </div>
+        <p class="headers">Cerca de ti <v-icon class="icons">fas fa-map-marked-alt</v-icon></p>
     </div>
 </template>
 
 <script>
+import categoryButtons from '../components/home/categoryButtons.vue'
 export default {
-    name: 'home'
+    name: 'home',
+    components: {
+        categoryButtons
+    }
 }
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
     #home{
+        width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        padding: 24px 0px 0px 24px;
+    }
+    .rowContainer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
         align-items: center;
+    }
+    .icons{
+        font-size: 36px;
+        font-weight: bold;
+        color: white;
+    }
+    .headers{
+        font-family: 'Poppins',sans-serif;
+        font-size: 36px;
+        font-weight: bold;
+        color: white;
     }
 </style>
