@@ -5,7 +5,8 @@
         </div>
         <p class="headers">Categorías <v-icon class="icons">fas fa-paw</v-icon></p>
         <div class="rowContainer">
-            <category-buttons/>
+            <category-buttons v-for="buttonColor in buttonColors" :key="buttonColor.key" 
+            :buttonColor="buttonColor.color" :buttonImage="buttonColor.img"/>
         </div>
         <p class="headers">Cerca de ti <v-icon class="icons">fas fa-map-marked-alt</v-icon></p>
     </div>
@@ -17,7 +18,15 @@ export default {
     name: 'home',
     components: {
         categoryButtons
-    }
+    },
+    data: () => ({
+        buttonColors: [
+            {key: 1,color: '#21a434',img: '../assets/boxer.png'},
+            {key: 2,color: '#a42151',img: '../assets/chihuahua.jpg'},
+            {key: 3,color: '#a4219f',img: '../assets/perico.jpg'},
+            {key: 3,color: '#21a434',img: '../assets/pug.jpg'}
+        ]
+    })
 }
 </script>
 
